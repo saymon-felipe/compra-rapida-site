@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag } from './Icons';
+import BrandLogo from './BrandLogo';
 
 const Footer: React.FC = () => {
   return (
@@ -7,11 +7,8 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="p-1.5 bg-brand-600 rounded-lg text-white">
-                <ShoppingBag size={20} strokeWidth={2.5} />
-              </div>
-              <span className="text-xl font-bold">CompraRápida</span>
+            <div className="mb-4">
+              <BrandLogo className="h-8" variant="inverted" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Simplificando a forma como você faz compras de mercado. Rápido, barato e local.

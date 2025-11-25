@@ -6,20 +6,23 @@
     <title>Compra Rápida - Seu mercado em segundos</title>
     <meta name="description" content="Encontre produtos perto de você com o melhor custo-benefício.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
+              brand: ['Kanit', 'sans-serif'],
             },
             colors: {
               brand: {
                 50: '#e8f5e9',
                 100: '#c8e6c9',
                 500: '#4caf50',
-                600: '#43a047',
+                600: '#43a047', // Cor exata solicitada RGB #43A047
                 700: '#388e3c',
                 800: '#2e7d32',
                 900: '#1b5e20',

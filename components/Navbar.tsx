@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ShoppingBag, Menu, X } from './Icons';
+import { Menu, X } from './Icons';
+import BrandLogo from './BrandLogo';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,14 +22,12 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className={`p-2 rounded-lg ${isScrolled ? 'bg-brand-600 text-white' : 'bg-white text-brand-600'}`}>
-              <ShoppingBag size={24} strokeWidth={2.5} />
-            </div>
-            <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-              Compra<span className={isScrolled ? 'text-brand-600' : 'text-green-200'}>Rápida</span>
-            </span>
+          {/* Logo - Agora usando a imagem completa */}
+          <div className="flex items-center">
+            <BrandLogo 
+              className="h-8 md:h-10" 
+              variant={isScrolled ? 'default' : 'inverted'} 
+            />
           </div>
 
           {/* Desktop Nav */}
