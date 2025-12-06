@@ -1,8 +1,7 @@
-import React from 'react';
 import { Search, ShoppingBag, CheckCircle, ChevronRight } from './Icons';
 import PhoneMockup from './PhoneMockup';
 
-const HowItWorks: React.FC = () => {
+const HowItWorks = () => {
   return (
     <section id="como-funciona" className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

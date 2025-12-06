@@ -1,8 +1,7 @@
-import React from 'react';
 import { MapPin, DollarSign, Smartphone, Zap, Star } from './Icons';
 import { FeatureProps } from '../types';
 
-const FeatureCard: React.FC<FeatureProps> = ({ title, description, icon }) => (
+const FeatureCard = ({ title, description, icon }: FeatureProps) => (
   <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-100 transition-all duration-300 group">
     <div className="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-600 transition-colors duration-300">
       <div className="text-brand-600 group-hover:text-white transition-colors duration-300">
@@ -14,7 +13,7 @@ const FeatureCard: React.FC<FeatureProps> = ({ title, description, icon }) => (
   </div>
 );
 
-const Features: React.FC = () => {
+const Features = () => {
   const features: FeatureProps[] = [
     {
       title: "Mercados Locais",
@@ -55,7 +54,6 @@ const Features: React.FC = () => {
           ))}
         </div>
         
-        {/* Visual Callout inspired by Gourmetech Dashboard clean style */}
         <div className="mt-20 bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-100 flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1 space-y-6">
                 <div className="inline-block bg-yellow-100 text-yellow-800 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -75,7 +73,6 @@ const Features: React.FC = () => {
                 </ul>
             </div>
             <div className="flex-1 relative h-64 w-full md:w-auto bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center">
-                 {/* Placeholder for a feature graphic */}
                  <div className="absolute inset-0 bg-gradient-to-br from-brand-50 to-green-100"></div>
                  <div className="relative z-10 text-center p-6">
                     <div className="bg-white p-6 rounded-2xl shadow-xl max-w-xs mx-auto transform rotate-3 transition-transform hover:rotate-0">

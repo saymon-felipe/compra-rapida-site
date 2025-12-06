@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface BrandLogoProps {
   className?: string;
   variant?: 'default' | 'inverted';
 }
 
-const BrandLogo: React.FC<BrandLogoProps> = ({ className = "", variant = 'default' }) => {
+const BrandLogo = ({ className = "", variant = 'default' }: BrandLogoProps) => {
   // 'default': Usado em fundos brancos (Navbar com scroll) -> logo.png (Colorido + Texto Escuro)
   // 'inverted': Usado em fundos escuros (Hero, Footer, Navbar transparente) -> logo-white.png (Todo Branco)
   const logoSrc = variant === 'inverted' ? '/assets/img/logo-compra-rapida-claro.png' : '/assets/img/logo-compra-rapida.png';

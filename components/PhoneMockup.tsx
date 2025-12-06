@@ -1,12 +1,10 @@
-import React from 'react';
-
 interface PhoneMockupProps {
   src: string;
   alt: string;
   className?: string;
 }
 
-const PhoneMockup: React.FC<PhoneMockupProps> = ({ src, alt, className = "" }) => {
+const PhoneMockup = ({ src, alt, className = "" }: PhoneMockupProps) => {
   return (
     <div className={`relative mx-auto border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl ${className}`}>
       <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute z-10"></div>
