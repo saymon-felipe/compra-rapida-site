@@ -1,5 +1,5 @@
 {
-  "name": "compra-rapida-landing",
+  "name": "compra-rapida-site",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": "22.x"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
