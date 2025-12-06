@@ -32,8 +32,8 @@ const Features: React.FC = () => {
       icon: <Smartphone size={28} />
     },
     {
-      title: "Entrega Flash",
-      description: "Entregadores parceiros prontos para levar sua compra em minutos. Acompanhe em tempo real.",
+      title: "Entrega Rastreada",
+      description: "Nosso app rastreia o status atual do seu pedido. Acompanhe em tempo real.",
       icon: <Zap size={28} />
     }
   ];

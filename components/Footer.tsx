@@ -20,7 +20,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white">Sobre nós</a></li>
               <li><a href="#" className="hover:text-white">Carreiras</a></li>
-              <li><a href="#" className="hover:text-white">Imprensa</a></li>
             </ul>
           </div>
 
@@ -28,7 +27,6 @@ const Footer: React.FC = () => {
             <h4 className="font-bold mb-4 text-brand-500">Parceiros</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white">Quero vender</a></li>
-              <li><a href="#" className="hover:text-white">Entregadores</a></li>
               <li><a href="#" className="hover:text-white">Portal do Parceiro</a></li>
             </ul>
           </div>
@@ -38,13 +36,12 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white">Termos de Uso</a></li>
               <li><a href="#" className="hover:text-white">Privacidade</a></li>
-              <li><a href="#" className="hover:text-white">Cookies</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Compra Rápida Tecnologia Ltda.</p>
+          <p>&copy; {new Date().getFullYear()} Compra Rápida. Feito por <a href="https://kineticsolutions.com.br?utm_source=compra-rapida" target="_blank" rel="noopener">KSI - Kinetic Solutions</a>.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
              {/* Social placeholders */}
              <a href="#" className="hover:text-brand-500">Instagram</a>

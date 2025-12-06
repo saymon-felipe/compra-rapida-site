@@ -14,10 +14,10 @@ const HowItWorks: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-50 rounded-full z-0"></div>
             
             <div className="absolute top-10 left-10 z-10 transform scale-90">
-                <PhoneMockup src="https://picsum.photos/400/801?random=2" alt="Busca" className="shadow-2xl border-gray-900" />
+                <PhoneMockup src="/assets/img/print-compra-rapida-inicio.jpg" alt="Busca" className="shadow-2xl border-gray-900" />
             </div>
             <div className="absolute top-32 left-48 z-20 transform scale-95 translate-x-4">
-                <PhoneMockup src="https://picsum.photos/400/802?random=3" alt="Carrinho" className="shadow-2xl border-gray-900" />
+                <PhoneMockup src="/assets/img/print-compra-rapida-carrinho.jpg" alt="Carrinho" className="shadow-2xl border-gray-900" />
             </div>
           </div>
 
@@ -36,12 +36,12 @@ const HowItWorks: React.FC = () => {
                 {
                   icon: <ShoppingBag className="w-6 h-6 text-white" />,
                   title: "2. Monte sua cesta",
-                  desc: "Adicione itens de um ou múltiplos locais. Nós organizamos a logística para você receber tudo junto."
+                  desc: "Adicione um ou mais itens de um vendedor."
                 },
                 {
                   icon: <CheckCircle className="w-6 h-6 text-white" />,
                   title: "3. Receba em casa",
-                  desc: "Pague com PIX em 1 clique e acompanhe o entregador. Sem surpresas, sem demora."
+                  desc: "Pague com PIX em 1 toque e acompanhe sua entrega. Sem surpresas, sem demora."
                 }
               ].map((step, idx) => (
                 <div key={idx} className="flex group">

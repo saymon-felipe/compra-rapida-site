@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
-            {['Funcionalidades', 'Como Funciona', 'Depoimentos'].map((item) => (
+            {['Funcionalidades', 'Como Funciona'].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase().replace(' ', '-')}`} 

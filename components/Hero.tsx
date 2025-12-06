@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
           <div className="relative mx-auto lg:ml-auto w-full max-w-[400px] lg:max-w-full">
             <div className="relative z-10 transform lg:rotate-[-6deg] hover:rotate-0 transition-transform duration-500">
                <PhoneMockup 
-                 src="https://picsum.photos/400/800?random=1" 
+                 src="/assets/img/print-compra-rapida-inicio.jpg" 
                  alt="App Compra Rápida Tela Inicial" 
                />
                
@@ -79,8 +79,8 @@ const Hero: React.FC = () => {
                            <Zap className="text-brand-600 w-6 h-6" />
                        </div>
                        <div>
-                           <p className="text-xs text-gray-500 font-semibold">Tempo de entrega</p>
-                           <p className="text-lg font-bold text-gray-800">15 min</p>
+                           <p className="text-xs text-gray-500 font-semibold">Agilidade no pedido</p>
+                           <p className="text-lg font-bold text-gray-800">+ Fácil</p>
                        </div>
                    </div>
                </div>

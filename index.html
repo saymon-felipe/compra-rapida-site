@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Compra Rápida - Seu mercado em segundos</title>
-    <meta name="description" content="Encontre produtos perto de você com o melhor custo-benefício.">
+    <meta name="description" content="Encontre produtos perto de você com o melhor custo-benefício. Compare preços de mercados e receba em segundos.">
+    <meta name="keywords" content="mercado online, delivery, compras, economia, supermercado perto, compra rápida">
+    <meta name="author" content="Compra Rápida">
+    <meta name="robots" content="index, follow"> <link rel="canonical" href="https://comprarapida.com.br/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://comprarapida.com.br/" />
+    <meta property="og:title" content="Compra Rápida - Economize no Mercado" />
+    <meta property="og:description" content="Encontre produtos perto de você com o melhor custo-benefício. Baixe agora!" />
+    <meta property="og:image" content="https://comprarapida.com.br/assets/img/banner-social.jpg" /> 
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Compra Rápida" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://comprarapida.com.br/" />
+    <meta name="twitter:title" content="Compra Rápida - Seu mercado em segundos" />
+    <meta name="twitter:description" content="Encontre produtos perto de você com o melhor custo-benefício." />
+    <meta name="twitter:image" content="https://comprarapida.com.br/assets/img/banner-social.jpg" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png"> 
+    
+    <meta name="theme-color" content="#4caf50">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Compra Rápida",
+      "url": "https://www.comprarapida.com.br/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.comprarapida.com.br/busca?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -22,7 +62,7 @@
                 50: '#e8f5e9',
                 100: '#c8e6c9',
                 500: '#4caf50',
-                600: '#43a047', // Cor exata solicitada RGB #43A047
+                600: '#43a047',
                 700: '#388e3c',
                 800: '#2e7d32',
                 900: '#1b5e20',
@@ -33,34 +73,27 @@
       }
     </script>
     <style>
-      /* Smooth scrolling for anchor links */
-      html {
-        scroll-behavior: smooth;
-      }
-      /* Hide scrollbar for clean UI in specific areas if needed */
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
+      html { scroll-behavior: smooth; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
-    "vite": "https://aistudiocdn.com/vite@^7.2.4"
-  }
-}
-</script>
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+        "vite": "https://aistudiocdn.com/vite@^7.2.4"
+      }
+    }
+    </script>
+    
 </head>
-  <body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gray-50 text-gray-800 antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
-</html>
+  </html>
