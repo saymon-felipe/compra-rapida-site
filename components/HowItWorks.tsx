@@ -57,12 +57,6 @@ const HowItWorks = () => {
                 </div>
               ))}
             </div>
-
-            <div className="mt-12">
-               <button className="flex items-center text-brand-700 font-bold hover:text-brand-800 transition-colors">
-                  Ver tutorial completo <ChevronRight className="w-5 h-5 ml-1" />
-               </button>
-            </div>
           </div>
         </div>
       </div>

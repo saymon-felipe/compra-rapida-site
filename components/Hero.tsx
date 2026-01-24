@@ -38,9 +38,9 @@ const Hero = () => {
                 <Zap className="w-5 h-5 fill-current" />
                 <span>Baixar Agora</span>
               </button>
-              <button className="w-full sm:w-auto px-8 py-4 bg-brand-700/50 text-white font-semibold rounded-xl border border-brand-500/50 hover:bg-brand-700 transition-colors">
+              <a href="https://app.gourmetech.com.br/login" target="_blank" className="w-full sm:w-auto px-8 py-4 bg-brand-700/50 text-white font-semibold rounded-xl border border-brand-500/50 hover:bg-brand-700 transition-colors">
                 Sou Comerciante
-              </button>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 gap-4 text-left max-w-sm mx-auto lg:mx-0">
