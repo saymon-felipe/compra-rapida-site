@@ -44,7 +44,7 @@ const Terms = () => {
             
             <div className="mt-12 pt-8 border-t border-gray-200">
               <p className="text-sm text-gray-400">
-                Dúvidas? Entre em contato pelo e-mail suporte@comprarapida.com.br
+                Dúvidas? Entre em contato pelo e-mail appgourmetech@gmail.com
               </p>
             </div>
           </div>
