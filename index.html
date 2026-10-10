@@ -28,12 +28,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png"> 
     
-    <meta name="theme-color" content="#4caf50">
+    <meta name="theme-color" content="#16a34a">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Kanit:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
     {
@@ -54,19 +54,34 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
               brand: ['Kanit', 'sans-serif'],
             },
             colors: {
               brand: {
-                50: '#e8f5e9',
-                100: '#c8e6c9',
-                500: '#4caf50',
-                600: '#43a047',
-                700: '#388e3c',
-                800: '#2e7d32',
-                900: '#1b5e20',
+                50: '#eefcf2',
+                100: '#d7f7e1',
+                200: '#b2eec6',
+                300: '#7ee0a4',
+                400: '#46ca7d',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+                800: '#166534',
+                900: '#14532d',
+                950: '#052e16',
+              },
+              dark: {
+                800: '#111827',
+                850: '#0d131f',
+                900: '#090d16',
+                950: '#05080e',
               }
+            },
+            boxShadow: {
+              'glow-green': '0 0 40px -10px rgba(34, 197, 94, 0.35)',
+              'glow-card': '0 20px 40px -15px rgba(0, 0, 0, 0.07)',
             }
           }
         }
@@ -76,20 +91,19 @@
       html { scroll-behavior: smooth; }
       .no-scrollbar::-webkit-scrollbar { display: none; }
       .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
-    
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-        "react/": "https://aistudiocdn.com/react@^19.2.0/",
-        "react": "https://aistudiocdn.com/react@^19.2.0",
-        "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
-        "vite": "https://aistudiocdn.com/vite@^7.2.4"
+      .bg-grid-pattern {
+        background-size: 32px 32px;
+        background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
       }
-    }
-    </script>
+      .bg-grid-pattern-light {
+        background-size: 32px 32px;
+        background-image: 
+          linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+      }
+    </style>
     
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">

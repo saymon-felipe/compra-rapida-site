@@ -6,26 +6,29 @@ interface PhoneMockupProps {
 
 const PhoneMockup = ({ src, alt, className = "" }: PhoneMockupProps) => {
   return (
-    <div className={`relative mx-auto border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl ${className}`}>
-      <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute z-10"></div>
-      <div className="h-[32px] w-[3px] bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
-      <div className="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
-      <div className="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
-      <div className="h-[64px] w-[3px] bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
-      <div className="rounded-[2rem] overflow-hidden w-full h-full bg-white relative">
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
+    <div className={`relative mx-auto border-gray-900 bg-gray-900 border-[10px] sm:border-[12px] rounded-[2.8rem] h-[560px] sm:h-[620px] w-[280px] sm:w-[310px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-white/20 ${className}`}>
+      {/* Botões laterais */}
+      <div className="h-[32px] w-[3px] bg-gray-700 absolute -left-[14px] top-[90px] rounded-l-md"></div>
+      <div className="h-[46px] w-[3px] bg-gray-700 absolute -left-[14px] top-[140px] rounded-l-md"></div>
+      <div className="h-[46px] w-[3px] bg-gray-700 absolute -left-[14px] top-[196px] rounded-l-md"></div>
+      <div className="h-[64px] w-[3px] bg-gray-700 absolute -right-[14px] top-[150px] rounded-r-md"></div>
+
+      {/* Tela */}
+      <div className="rounded-[2.2rem] overflow-hidden w-full h-full bg-dark-900 relative">
+        <img 
+          src={src} 
+          alt={alt} 
+          className="w-full h-full object-cover object-top select-none" 
+          loading="eager"
+        />
         
-        {/* Overlay to simulate app UI elements if image is just a placeholder */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-            {/* Fake Status Bar */}
-            <div className="flex justify-between items-center px-6 pt-3 text-xs font-bold text-gray-800/50">
-                <span>9:41</span>
-                <div className="flex space-x-1">
-                    <div className="w-3 h-3 bg-gray-800/50 rounded-full"></div>
-                    <div className="w-3 h-3 bg-gray-800/50 rounded-full"></div>
-                </div>
-            </div>
+        {/* Dynamic Island / Notch */}
+        <div className="w-[96px] h-[20px] bg-black top-2.5 rounded-full left-1/2 -translate-x-1/2 absolute z-20 flex items-center justify-end px-2">
+          <div className="w-2.5 h-2.5 bg-[#0a1a0f] rounded-full border border-gray-800"></div>
         </div>
+
+        {/* Reflexo sutil de vidro */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.03] to-white/[0.08] pointer-events-none z-10"></div>
       </div>
     </div>
   );
