@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShoppingBag, Users, Zap, Heart } from 'lucide-react'; 
+import { Users, Zap, Heart } from 'lucide-react'; 
 
 const About = () => {
   return (

@@ -1,4 +1,4 @@
-import { Search, ShoppingBag, CheckCircle, ChevronRight } from './Icons';
+import { Search, ShoppingBag, CheckCircle } from './Icons';
 import PhoneMockup from './PhoneMockup';
 
 const HowItWorks = () => {
