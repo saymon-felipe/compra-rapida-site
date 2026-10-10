@@ -1,0 +1,2 @@
+# SPA: o link do e-mail de redefinicao de senha do entregador abre direto nesta rota
+/entregador/*  /index.html  200

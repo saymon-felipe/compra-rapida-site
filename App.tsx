@@ -7,10 +7,16 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
-import Partner from './pages/Partner'; 
+import Partner from './pages/Partner';
+import EntregadorRedefinirSenha from './pages/EntregadorRedefinirSenha';
 
 const App = () => {
   const location = useLocation();
+
+  // Pagina tecnica sem o layout do site (sem Navbar/Footer): valida o link do e-mail e abre o app
+  if (location.pathname.replace(/\/$/, '') === '/entregador/redefinir-senha') {
+    return <EntregadorRedefinirSenha />;
+  }
 
   return (
     <div className="min-h-screen font-sans bg-gray-50 text-gray-900 selection:bg-brand-200 selection:text-brand-900 flex flex-col">
