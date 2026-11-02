@@ -48,7 +48,7 @@ const Privacy = () => {
           <div className="flex items-center justify-center gap-4 mt-6 text-xs text-gray-400">
             <span>Conformidade com a LGPD</span>
             <span>•</span>
-            <span>Última atualização: {new Date().toLocaleDateString('pt-BR')}</span>
+            <span>Última atualização: 02/11/2026</span>
           </div>
 
           {/* Abas */}
@@ -208,6 +208,16 @@ const Privacy = () => {
                     <li><strong>Dados Transacionais do PIX:</strong> Registros de cobrança e chave PIX de origem para viabilizar eventual estorno automático processado via Asaas. <em>A plataforma não coleta e não armazena números de cartões de crédito.</em></li>
                     <li><strong>Histórico de Pedidos e Preferências:</strong> Registro de itens comprados, preferências de substituição de mercadorias e comunicações com o suporte.</li>
                   </ul>
+                </div>
+
+                <div className="space-y-3 pt-4 border-t border-gray-100">
+                  <h3 className="text-lg font-bold text-gray-900">Login com Google e dados da Conta Google</h3>
+                  <p className="text-sm text-gray-600">
+                    Ao escolher entrar com o Google, o Compra Rápida recebe do Google seu identificador de conta, nome, e-mail e foto de perfil, quando disponíveis. O aplicativo solicita acesso aos dados básicos de perfil e e-mail para verificar sua identidade, criar ou identificar sua conta e permitir o acesso aos serviços. O Compra Rápida não recebe sua senha do Google.
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    O servidor verifica a credencial recebida com o Google e armazena o identificador, nome, e-mail e endereço da foto de perfil no cadastro da conta. Informações necessárias à realização de pedidos podem ser compartilhadas com o mercado, o entregador e o provedor de pagamento, conforme descrito abaixo. Para solicitar acesso, correção ou exclusão de seus dados, entre em contato pelo e-mail <a className="text-brand-600 hover:underline" href="mailto:appgourmetech@gmail.com">appgourmetech@gmail.com</a>; a retenção também pode ser necessária para obrigações legais e contratuais.
+                  </p>
                 </div>
 
                 <div id="pc-2" className="space-y-3 pt-4 border-t border-gray-100">
