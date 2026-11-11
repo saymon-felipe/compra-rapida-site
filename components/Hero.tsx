@@ -1,3 +1,4 @@
+import { playStoreUrl } from '../config';
 import { motion } from 'framer-motion';
 import PhoneMockup from './PhoneMockup';
 import { Zap, CheckCircle2, ArrowRight, RefreshCw, Truck, Sparkles } from './Icons';
@@ -59,7 +60,7 @@ const Hero = () => {
                 className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-400 hover:to-brand-500 text-white font-bold rounded-2xl shadow-[0_12px_28px_rgba(34,197,94,0.35)] hover:shadow-[0_16px_35px_rgba(34,197,94,0.5)] transform hover:-translate-y-1 active:translate-y-0 transition-all duration-200 flex items-center justify-center space-x-2.5 group"
               >
                 <Zap className="w-5 h-5 fill-current text-white group-hover:scale-110 transition-transform" />
-                <span className="text-base tracking-wide">Baixar Aplicativo Grátis</span>
+                <span className="text-base tracking-wide">{playStoreUrl ? 'Baixar aplicativo' : 'Ver disponibilidade'}</span>
               </button>
 
               <a 

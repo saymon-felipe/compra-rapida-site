@@ -1,3 +1,4 @@
+import { gourmetechContactUrl, gourmetechLoginUrl } from '../config';
 import { motion } from 'framer-motion';
 import { 
   FileText, 
@@ -72,7 +73,7 @@ const Partner = () => {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a 
-              href="https://www.gourmetech.com.br/contact?source=compra-rapida" 
+              href={gourmetechContactUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white font-bold rounded-2xl shadow-lg shadow-brand-600/30 transition-all flex items-center justify-center gap-2"
@@ -82,7 +83,7 @@ const Partner = () => {
             </a>
 
             <a 
-              href="https://app.gourmetech.com.br/login" 
+              href={gourmetechLoginUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-7 py-4 bg-dark-800 hover:bg-dark-700 text-gray-200 hover:text-white font-semibold rounded-2xl border border-gray-700 transition-all flex items-center justify-center gap-2"
@@ -162,7 +163,7 @@ const Partner = () => {
 
               <div>
                 <a 
-                  href="https://www.gourmetech.com.br/contact?source=compra-rapida" 
+                  href={gourmetechContactUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 bg-brand-600 text-white font-bold rounded-2xl hover:bg-brand-500 transition-all shadow-lg shadow-brand-600/30 group"

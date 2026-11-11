@@ -1,3 +1,4 @@
+import { gourmetechLoginUrl, playStoreUrl } from '../config';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -127,7 +128,7 @@ const Navbar = () => {
           {/* Ações Desktop */}
           <div className="hidden lg:flex items-center space-x-3">
             <a
-              href="https://app.gourmetech.com.br/login"
+              href={gourmetechLoginUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={`text-xs font-semibold px-3 py-2 rounded-lg transition-all flex items-center gap-1 ${
@@ -145,7 +146,7 @@ const Navbar = () => {
               className="relative group overflow-hidden px-5 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-md shadow-brand-500/25 hover:shadow-lg hover:shadow-brand-500/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center gap-2"
             >
               <Zap size={16} className="fill-current text-white animate-pulse" />
-              <span>Baixar App</span>
+              <span>{playStoreUrl ? 'Baixar app' : 'Disponibilidade'}</span>
             </button>
           </div>
 
@@ -240,11 +241,11 @@ const Navbar = () => {
                   className="w-full py-3 px-4 bg-brand-600 text-white font-bold rounded-xl shadow-md flex items-center justify-center gap-2"
                 >
                   <Zap size={18} />
-                  <span>Baixar Compra Rápida</span>
+                  <span>{playStoreUrl ? 'Baixar Compra Rápida' : 'Disponibilidade do app'}</span>
                 </button>
 
                 <a
-                  href="https://app.gourmetech.com.br/login"
+                  href={gourmetechLoginUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-2.5 px-4 text-center text-xs font-semibold text-gray-700 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors flex items-center justify-center gap-1.5"

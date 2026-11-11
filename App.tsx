@@ -9,6 +9,7 @@ import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Partner from './pages/Partner';
 import EntregadorRedefinirSenha from './pages/EntregadorRedefinirSenha';
+import ExcluirConta from './pages/ExcluirConta';
 
 const App = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/sobre" element={<About />} />
             <Route path="/termos" element={<Terms />} />
             <Route path="/privacidade" element={<Privacy />} />
+            <Route path="/excluir-conta" element={<ExcluirConta />} />
             <Route path="/quero-vender" element={<Partner />} />
           </Routes>
         </AnimatePresence>

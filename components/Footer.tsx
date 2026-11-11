@@ -1,3 +1,4 @@
+import { gourmetechHomeUrl, gourmetechLoginUrl, playStoreUrl } from '../config';
 import { Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo';
 import { ShieldCheck, Zap, ArrowUpRight } from './Icons';
@@ -35,7 +36,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="/#como-funciona" className="hover:text-white transition-colors">Como Funciona</a></li>
               <li><a href="/#diferenciais" className="hover:text-white transition-colors">Diferenciais & Estorno</a></li>
-              <li><a href="/#download" className="hover:text-white transition-colors">Baixar Aplicativo</a></li>
+              <li><a href="/#download" className="hover:text-white transition-colors">{playStoreUrl ? 'Baixar aplicativo' : 'Disponibilidade do aplicativo'}</a></li>
+              <li><a href="/excluir-conta" className="hover:text-white transition-colors">Excluir minha conta</a></li>
               <li><Link to="/sobre" className="hover:text-white transition-colors">Sobre a Plataforma</Link></li>
             </ul>
           </div>
@@ -52,7 +54,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://app.gourmetech.com.br/login" 
+                  href={gourmetechLoginUrl}
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-white transition-colors flex items-center gap-1"
@@ -61,7 +63,7 @@ const Footer = () => {
                   <ArrowUpRight size={12} className="text-gray-500" />
                 </a>
               </li>
-              <li><a href="https://www.gourmetech.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Conhecer Gourmetech PDV</a></li>
+              <li><a href={gourmetechHomeUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Conhecer Gourmetech PDV</a></li>
             </ul>
           </div>
 

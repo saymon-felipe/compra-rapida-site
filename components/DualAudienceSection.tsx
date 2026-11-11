@@ -1,3 +1,4 @@
+import { gourmetechLoginUrl, playStoreUrl } from '../config';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -115,7 +116,7 @@ const DualAudienceSection = () => {
                     className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm shadow-lg shadow-brand-600/30 transition-all transform hover:-translate-y-0.5"
                   >
                     <Zap size={16} className="fill-current" />
-                    <span>Baixar App no Google Play</span>
+                    <span>{playStoreUrl ? 'Baixar no Google Play' : 'Ver disponibilidade'}</span>
                   </a>
                 </div>
               </div>
@@ -188,7 +189,7 @@ const DualAudienceSection = () => {
                   </Link>
 
                   <a
-                    href="https://app.gourmetech.com.br/login"
+                    href={gourmetechLoginUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-dark-800 hover:bg-dark-700 text-gray-200 font-semibold text-sm border border-gray-700 transition-colors"
